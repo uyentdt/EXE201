@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laura Bootstrap Theme</title>
+    <meta
+      name="description"
+      content="Free Bootstrap Theme by BootstrapMade.com"
+    />
+    <meta
+      name="keywords"
+      content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"
+    />
+
+    <!-- =======================================================
+    Theme Name: Laura
+    Theme URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="mt-8" style="display: flex; justify-content: center">
+      <img
+        src="https://localhost:44391{{ item.image }}"
+        alt="{{ item.title }}"
+        class="fakeimg"
+        style="height: 250px; width: 30%"
+      />
+    </div>
+    <section id="about" class="section-padding wow fadeIn delay-05s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-right">
+            <h2 class="title-text">
+              {{ item.userName }}<br /><span
+                class="deco"
+                style="font-size: 14px"
+              >
+                {{ item.createdAt | date : "dd/MM/yyyy" }}
+              </span>
+            </h2>
+          </div>
+          <div class="col-md-6 text-left">
+            <div class="about-text">
+              <p>
+                {{ item.title }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12" style="margin-left: 30px; margin-right: 30px">
+          <p style="text-indent: 30px">{{ item.description }}</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
